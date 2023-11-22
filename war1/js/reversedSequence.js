@@ -4,13 +4,10 @@
 //code 
 
 const reverseSeq = n => {
-    if (n < 1) {
-      return [];
-    } else {
-      const curArray = [n];
-      const recursed = reverseSeq(n - 1);
-      return curArray.concat(recursed);
-    }
+  let arr = [];
+    for (let i=n; i>0; i--) {
+      arr.push(i);
+      } return arr;
   };
   
   console.log(reverseSeq(9))

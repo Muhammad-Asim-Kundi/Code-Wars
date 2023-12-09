@@ -1,6 +1,6 @@
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/Muhammad%20Asim%20kundi" >Visit Here</a> 
 
-![alt tag](https://github.com/Muhammad-Asim-Kundi/Code-Wars/code-war.png)
+![alt tag](https://github.com/Muhammad-Asim-Kundi/Code-Wars/blob/main/images/code-wars.png)
 A repository filled with codewars challenges (kata). Currently Ranked #1305 on the global leaderboard, Completed over 1000+ challenges and Push 5 solutions every week.
 
 ## How It's Made:

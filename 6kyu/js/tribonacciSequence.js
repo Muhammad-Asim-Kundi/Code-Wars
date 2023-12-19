@@ -23,7 +23,7 @@ function tribonacci(signature, n) {
       return signature.slice(0, n);
 
       //ANOTHER WAY TO WRITE THIS CODE
-      
+
       // let newNum = 0
       // for(let i=0; i<array.length; i++){
       //         newNum += array[i]
@@ -40,3 +40,13 @@ function tribonacci(signature, n) {
   }
   
   console.log(tribonacci([1, 1, 1], 10));
+
+
+/* another code */
+
+function tri(signature,n){  
+    for (var i = 0; i < n-3; i++) { // iterate n times
+      signature.push(signature[i] + signature[i+1] + signature[i+2]); // add last 3 array items and push to trib
+    }
+    return signature.slice(0, n); //return trib - length of n
+  }

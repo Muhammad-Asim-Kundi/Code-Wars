@@ -24,6 +24,15 @@ function findOdd(A) {
     return result;
 }
 
+function singleApear(array){
+    let res = 0; 
+    
+    for(let i=0; i<array.length; i++){
+        res ^= array[i]
+    }
+    return res
+}
+
 
 /** code */
 // this method is not the convinient and efficient method

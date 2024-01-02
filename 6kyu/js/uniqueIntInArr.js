@@ -24,6 +24,8 @@ function findOdd(A) {
     return result;
 }
 
+
+// practicing again
 function singleApear(array){
     let res = 0; 
     
@@ -34,7 +36,7 @@ function singleApear(array){
 }
 
 
-/** code */
+/** another code */
 // this method is not the convinient and efficient method
 function findUnique(arr) {
     return arr.find((item, index) => arr.filter(el => el == item).length % 2)

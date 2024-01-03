@@ -19,3 +19,8 @@ function fakeBin(x){
     }
     return n
   }
+
+  // or shorter method
+function fakeeeBin(x){
+    return x.split('').map(n = n < 5 ? 0 : 1).join('')
+}

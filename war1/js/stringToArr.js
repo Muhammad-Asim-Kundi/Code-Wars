@@ -11,3 +11,4 @@ function stringToArray(string){
 	// using commma's and space between comma's as a sperator
   return string.split(" ")
 }
+

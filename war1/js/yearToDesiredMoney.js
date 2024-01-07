@@ -34,3 +34,18 @@ function calculateYears(principal, interestRate, taxRate, desired) {
 
     return years;
 }
+
+/** practicing again */
+
+function calYears(principal, interestRate, taxRate, desired){
+
+    let years = 0;
+
+    for(years = 0; principal < desired; years++){
+        //calculate years formula
+        principal = principal + principal * interestRate * (1 - taxRate);
+
+    }
+
+    return years;
+}

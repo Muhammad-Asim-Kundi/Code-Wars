@@ -19,3 +19,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
           return -ageGap
       }
 }
+
+// Another Code 
+
+function twiceOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}

@@ -57,4 +57,32 @@ function dirReduc(arr) {
     }
   
     return result;
+}
+
+dirReduc(["NORTH", "SOUTH", "EAST", "WEST"])
+
+
+/** practice */
+
+function direcReduction(array){
+
+  const opposDir = {
+    "NORTH": "SOUTH",
+    "SOUTH": "NORTH",
+    "EAST": "WEST",
+    "WEST": "EAST"
   }
+
+  const res = []
+  //using for loop for looping through array and poping and pushing result in res
+  for(const directions of array){
+    if(res.length > 0 && res[res.length-1]=== opposDir[directions]){
+      res.pop()
+    }else{
+      res.push(directions)
+    }
+  } 
+
+  //returning res to get the directions
+  return res
+}

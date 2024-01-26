@@ -86,3 +86,28 @@ function direcReduction(array){
   //returning res to get the directions
   return res
 }
+
+
+
+
+//practicing again//
+
+function dirctions(arr){
+  const falseDirection = {
+    "NORTH": "SOUTH", 
+    "SOUTH" : "NORTH",
+    "WEST" : "EAST",
+    "EAST" : "WEST"
+  }
+
+  const result = []
+  for(const direc of arr){
+    if(result.length >0 && result[result.length-1]==falseDirection[direcReduction]){
+      result.pop()
+    }else{
+      result.push(direc)
+    }
+  }
+
+  return result
+}

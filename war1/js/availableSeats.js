@@ -17,4 +17,12 @@
 function enough(cap, on, wait) {
     let available = cap - on;
     return (available >= wait) ? 0 : wait - available;
+
+}
+
+//** Practice */
+
+function enoughSpace(capacity, on, wait){
+    let availableSeats = capacity - on
+    return (availableSeats >= wait) ? 0 : wiat - availableSeats
 }

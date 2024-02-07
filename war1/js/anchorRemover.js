@@ -15,4 +15,10 @@ function removeUrlAnchor(url){
     }else{
       return url
     }
-  }
+}
+
+//** Anther Code */
+//This approach splits the URL into an array using "#" as the delimiter and then takes the
+//first element of the array, effectively removing the anchor and anything after it.
+
+const removeUrlAnchor = (url) => url.split("#")[0];

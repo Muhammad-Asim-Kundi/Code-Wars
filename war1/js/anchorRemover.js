@@ -22,5 +22,3 @@ function removeUrlAnchor(url){
 //first element of the array, effectively removing the anchor and anything after it.
 
 const removeUrlAnchor = (url) => url.split("#")[0];
-
-const removeUrlTag = (url) => url.split('#')[0]

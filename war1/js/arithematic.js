@@ -26,4 +26,10 @@ function arithmetic(a, b, operator){
     }else{
       return 'error'
     }
-  }
+}
+
+//** another Code */
+
+function arithOperation(a, b, operator){
+  return operator == 'add' ? a+b : operator == 'subtract' ? a-b : operator == 'devide' ? a/b : operator == 'multiply' ? a*b : 'error'
+}

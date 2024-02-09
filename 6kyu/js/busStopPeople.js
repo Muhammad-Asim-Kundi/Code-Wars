@@ -21,4 +21,17 @@ var number = function(busStops){
  
    // Ensure the result is not negative
    return Math.max(0, peopleOnBus);
- }
+}
+
+
+/** Practice */
+var availablNumbers = function(stops){
+  let peopleOn = 0; 
+
+  for(const [on , off] of stops){
+    peopleOn += on - off
+  }
+
+  return Math.max(0, peopleOn)
+}
+

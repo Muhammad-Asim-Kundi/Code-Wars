@@ -27,3 +27,19 @@ function order(words) {
 }
 
 console.log(order('i2s this1 3a b4ook'))
+
+//** Code */
+
+function orderStrInt(words){
+if(words == ''){
+  return ''
+}
+return words.split(' ').sort((a,b) => {
+  const numA = parseInt(a.match(/\d/)[0])
+  const numB = parseInt(b.match(/\d/)[0])
+
+  return numA - numB
+}).join(' ')
+}
+
+console.log(order('Fo1r the2 g3ood 4of th5e pe6ople'))

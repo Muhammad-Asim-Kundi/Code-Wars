@@ -21,3 +21,22 @@ function filter_list(l) {
     // returning array
     return array
 }
+
+//** Code Practice */
+
+function filterList(list){
+  //arrray to store filter list of the strings
+  let arr = []
+
+  //checking if the element in the list are integers
+  for(let i=0; i<list.length; i++){
+    //if the element is integer then push it to the list(array)
+    if(typeof list[i] === 'number'){
+      arr.push(list[i])
+    }
+  }
+
+  //returning the filter array 
+  return arr
+
+}

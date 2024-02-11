@@ -28,18 +28,24 @@ function order(words) {
 
 console.log(order('i2s this1 3a b4ook'))
 
-//** Code */
+
+
+
+//** Code Practice */
 
 function orderStrInt(words){
+  //returning space ' ' if the space is empty
 if(words == ''){
   return ''
 }
 return words.split(' ').sort((a,b) => {
+  //extracting the digits using regular expression and converting it to an integer
   const numA = parseInt(a.match(/\d/)[0])
   const numB = parseInt(b.match(/\d/)[0])
 
+  //sorting the extracted numbers stored in numA and numB
   return numA - numB
-}).join(' ')
+}).join(' ')//Joining the sorted array back into string
 }
 
 console.log(order('Fo1r the2 g3ood 4of th5e pe6ople'))

@@ -26,5 +26,19 @@ function gimme(triplet) {
     
     //returning the index of the middle number in the array
     return sortedTriplet[middle].index;
-  }
+}
+
+/**Another method */
+
+var gimmer = function (inputArray) {
+    let index = 0;
+    let max = Math.max(...inputArray);
+    let min = Math.min(...inputArray);
+    for(let i = 0; i < inputArray.length; i++){
+      if(inputArray[i] !== max && inputArray[i] !== min){        
+        index = i;
+      }
+    }
+    return index;
+};
   

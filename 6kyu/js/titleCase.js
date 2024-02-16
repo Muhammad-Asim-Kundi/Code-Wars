@@ -47,5 +47,32 @@ function titleCase(title, minorWords) {
   
     // Join the modified words into a single string and return the result
     return result.join(' ');
-  }
+}
+
   
+/** code practice */
+
+function titleCaseChange(title , smallWords){
+
+  if(!title || typeof title !== 'string'){
+    return ''
+  }
+
+  let titleWords = title.toLowerCase().split(' ')
+
+  if(!smallWords || typeof smallWords !== 'string'){
+    return titleWords.map(words => words.charAt(0).toUpperCase()+words.slice(1)).join(' ')
+  }
+
+  let minorWords = smallWords.toLowerCase().split(' ')
+
+  let result = titleWords.map((index , word)=>{
+    if(index === 0 || !minorWords.includes(word)){
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    }else{
+      return word
+    }
+  })
+
+  return result.join(' ')
+}

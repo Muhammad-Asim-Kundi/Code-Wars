@@ -30,3 +30,19 @@ function printerError(s) {
     }
     return `${totalErrors}/${total}`
   }
+
+
+/** Practice */
+
+function PrintErrors(s){
+  let total = 0
+  let totalErrors = 0
+  let word = s.toLowerCase()
+  for(let i=0; i<word.length; i++){
+    total++
+    if(!(/[a-m]/).test(word[i])){
+      totalErrors++
+    }
+  }
+  return `${totalErrors}/${total}`
+}

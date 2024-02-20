@@ -30,3 +30,17 @@ var uniqueInOrder = function (iterable) {
 var uniqueOrder=function(iterable){
     return [...iterable].filter((a, i) => a !== iterable[i-1])
 }
+
+//** practice */
+
+var uniqueOrder = function(iterable){
+  let arr = []
+
+  let updated = Array.isArray(iterable) ? iterable : iterable.split('')
+
+  updated.forEach((element, index) =>{
+    if(index===0 || element !==updated[index-1]){
+      arr.push(element)
+    }
+  })
+}

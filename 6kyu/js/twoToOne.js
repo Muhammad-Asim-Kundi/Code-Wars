@@ -22,3 +22,6 @@ function longest(s1, s2) {
     const result = sortedArray.join('');
     return result
 }
+
+/** another code  */
+

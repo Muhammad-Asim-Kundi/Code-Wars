@@ -15,4 +15,13 @@ function rot13(message){
       //applying method to find ascii value and fromCharCode() convert back to character
       return String.fromCharCode((char.charCodeAt(0) - shift + 13) % 26 + shift)
     })
+
 }
+
+//** Another method */
+
+function rot13Method(message) {
+    var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+    return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
+  }

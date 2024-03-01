@@ -28,3 +28,10 @@ function arrayDiff(a, b) {
     
     return arr
 }
+
+/** Short code */
+
+function arrayDiff(a, b) {
+    //using filter method
+    return a.filter(e => !b.includes(e));
+}

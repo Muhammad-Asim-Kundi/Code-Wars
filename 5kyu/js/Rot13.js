@@ -18,6 +18,15 @@ function rot13(message){
 
 }
 
+/** Practice Code */
+function rot(message){
+
+return message.replace(/[a-zA-Z]/g, function (char){
+  let shift = char <= 'Z' ? 65 : 97
+  return String.fromCharCode((char.charCodeAt(0) - shift + 13) % 26 + shift)
+})
+}
+
 //** Another method */
 
 function rot13Method(message) {

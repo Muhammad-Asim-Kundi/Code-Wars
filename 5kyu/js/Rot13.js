@@ -24,4 +24,13 @@ function rot13Method(message) {
     var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
     return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
-  }
+}
+
+/** Code */
+
+function rot13Meth(message){
+  var a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  var b = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
+
+  return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
+}

@@ -20,3 +20,14 @@ function validatePIN (pin) {
     
 }
 
+/** Code */
+function validPin(pin){
+    //regular expression to match exactly 4 and 6 and check the input as number
+    let regex = /^(\d{4}|\d{6})$/
+
+    //test the input against regular expression
+    let result = regex.test(pin)
+
+    return result
+}
+

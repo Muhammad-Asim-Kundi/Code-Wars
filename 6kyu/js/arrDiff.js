@@ -35,3 +35,9 @@ function arrayDiff(a, b) {
     //using filter method
     return a.filter(e => !b.includes(e));
 }
+
+/** Practice */
+function arrayDiff(a,b){
+//using filter method to find that a items include in b
+return a.filter(e => !b.includes(a))
+}

@@ -9,4 +9,12 @@
 function solution(str, ending){
     // return true if ending match with str-ending
   return str.endsWith(ending)
-  }
+
+}
+
+/** practice */
+
+function solutionCheck(str , end){
+  return str.endsWith(end)
+
+}

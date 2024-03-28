@@ -28,3 +28,9 @@ function flattenAndSort(array) {
     return sum
     
 }
+
+//** Short Code */
+
+function flattenSort(array) {
+    return [].concat(...array).sort((a,b) => a - b);
+}

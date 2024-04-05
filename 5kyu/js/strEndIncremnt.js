@@ -30,4 +30,9 @@ let incrementString = str =>
             // Convert 'e' to a number with +e and add 1
             // If no suffix is found, default to appending 1 to the string
             e ? +e + 1 : 1
-    );
+);
+
+
+/** PRACTICE AGAIN */
+
+let incrStr = string => string.replace(/([0-8]|\d?9+)?$/, (e)=>e ? e+1 : 1);

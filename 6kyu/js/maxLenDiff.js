@@ -39,3 +39,31 @@ function mxdiflg(a1, a2) {
     // Return the maximum absolute difference
     return maxDiff;
 }
+
+/** Practice */
+
+function maxAbs(a1,b2){
+    var differences = []
+
+    //iterate over each element in a1
+    for(var i=0; i<a1.length; i++){
+        // Iterate over each element in a2
+        for (var j = 0; j < a2.length; j++) {
+            // Calculate the absolute difference between the lengths of the strings
+            var diff = Math.abs(a1[i].length - a2[j].length);
+            // Push the absolute difference to the differences array
+            differences.push(diff);
+        }
+    }
+
+    //If either array is empty, return -1 
+    if (differences.length ===  0) {
+        return -1
+    }
+
+    // Find the maximum absolute difference
+    var maxDiff = Math.max(...differences)
+
+    // Return the maximum absolute difference
+    return maxDiff
+}

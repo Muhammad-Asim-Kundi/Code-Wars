@@ -25,3 +25,16 @@ function removeSmallest(arr) {
     // Create new array by concatenating elements before and after smallest element
     return arr.slice(0, smallestIndex).concat(arr.slice(smallestIndex + 1));
 }
+
+/** Practice */
+
+function remSmall(arr){
+    if (arr.length === 0) return [];
+
+    //find the index of the smallest element
+
+    const smallIndex = arr.indexOf(Math.min(...arr))
+
+    //create new array by concatenating elements before and after smallest element
+    return arr.slice(0,smallIndex).concat(arr.slice(smallIndex+1))
+}

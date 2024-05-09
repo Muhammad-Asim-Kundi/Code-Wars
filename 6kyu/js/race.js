@@ -37,3 +37,9 @@ function race(v1, v2, g) {
     // Return the time needed in hours, minutes, and seconds
     return [hours, minutes, seconds];
 }
+
+/** Another short code */
+function tortoRace(v1, v2, g){
+    let time=g/(v2-v1);
+    return v2>v1 ? [Math.floor(time),Math.floor(time*60%60),Math.floor(time*3600%60)] : null;
+}

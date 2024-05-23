@@ -13,3 +13,8 @@ function addBinary(a,b) {
     //BigInt('0b' + binaryA) converts the binary string back to a BigInt. The '0b' prefix indicates that the string is a binary number.
   return (BigInt('0b' + a.toString(2)) + BigInt('0b' + b.toString(2))).toString(2)
 }
+
+/** ANOTHER SHORT CODE */
+function addBin(a,b){
+    return (a+b).toString(2)
+  }

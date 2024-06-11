@@ -28,3 +28,16 @@ function alphabetPosition(text) {
     // Join the positions into a single string separated by spaces
     return positions.join(' ');
 }
+
+/** Code Practice */
+
+function alphabetPositionChange(strings){
+    function charToPosition(char){
+        const charCode = char.toLowerCase().charCodeAt(0);
+        return charCode - 96;
+    }
+    const position = Array.from(text).filter(char => /[a-zA-Z]/.test(char))
+    .map(char => charToPosition)
+
+    return positions.join(' ')
+}

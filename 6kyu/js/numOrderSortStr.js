@@ -29,6 +29,19 @@ function order(words) {
 console.log(order('i2s this1 3a b4ook'))
 
 
+/** Practice */
+function wordsSequence(words){
+  //return empty space if word is empty
+  if(words == '') return '';
+  return words.split(' ').sort((a,b)=>{
+    //extracting the digits using regular expression and coverting it to an iteger
+    const numA = parseInt(a.match(/\d/)[0])
+    const numB = parseInt(b.match(/\d/)[0])
+
+    //sorting the extracted numbers stored in numA and numB
+    return numA-numB
+  }).join(' ')
+}
 
 
 //** Code Practice */

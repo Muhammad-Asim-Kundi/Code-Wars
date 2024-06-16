@@ -42,4 +42,30 @@ multiplicationTable = function(size) {
     // Return the generated table/matrix
     return matrix
 }
+
+
+/** practice code  */
+
+mulTable = function(size) {
+ 
+    // Initialize an empty array to store the table/matrix
+  var matrix = []
    
+    // Loop through rows
+  for(let i=1; i<=size; i++){
+     
+     // Initialize an empty array for the current row
+    let row = []
+     
+     // Loop through columns
+    for(let j=1; j<=size; j++){
+       // Calculate the value and push it to the row array
+       row.push(i*j)
+    }
+     // Push the row array to the table array
+    matrix.push(row)
+  }
+  // Return the generated table/matrix
+  return matrix
+}
+ 

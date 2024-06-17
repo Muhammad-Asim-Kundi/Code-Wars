@@ -18,4 +18,11 @@
 function roundToNext5(n){
     // ...
     return Math.ceil(n/5)*5
-  }
+}
+
+/** Practice */
+
+function ToNext5(n){
+  // ...
+  return Math.ceil(n/5)*5
+}

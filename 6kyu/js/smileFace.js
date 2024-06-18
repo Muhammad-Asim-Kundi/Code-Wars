@@ -49,3 +49,13 @@ function countSmileys(arr) {
     
     return filtered.length
 }
+
+/** practice */
+
+function countSmile(arr) {
+    const regex = /[:;][-~]?[)D]/;
+    // Use the filter() method to create a new array that only includes the elements that match the pattern
+    let filtered = arr.filter(s => regex.test(s)) 
+    
+    return filtered.length
+}

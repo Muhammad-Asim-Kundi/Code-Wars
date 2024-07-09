@@ -14,3 +14,10 @@ function isIsogram(str){
     //By comparing the size of the Set to the length of the original string
     return new Set(str).size === str.length;
 }
+
+/** Pracitice */
+
+function isogramCheck(str){
+    str = str.toLowerCase()
+    return new Set(str).size === str.length
+}

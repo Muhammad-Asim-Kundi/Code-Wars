@@ -10,3 +10,9 @@ function sayHello( name, city, state ) {
     let names = name.join(' ')
     return `Hello, ${names}! Welcome to ${city}, ${state}!`
 }
+
+/** Code Practice */
+
+function greetingsHello(name, city, state){
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}

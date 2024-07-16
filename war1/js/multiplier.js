@@ -20,3 +20,9 @@ function multiply(number){
     return number * multiplier;
     
 }
+
+/** Code */
+
+function mult(number) {
+    return number * Math.pow(5, Math.abs(number).toString().length);
+}

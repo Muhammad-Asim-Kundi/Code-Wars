@@ -16,3 +16,9 @@ function isPowerOfTwo(n) {
     if (n % 2 !== 0) return false;
     return isPowerOfTwo(n / 2);
 }
+
+/** Code Practice */
+function isPowerOfTwo(n){
+    return Number.isInteger(Math.log2(n));
+    
+}

@@ -16,19 +16,19 @@ function accum(s) {
 
 
 //code practice
-// function accum(s) {
-//     // Split the string into an array of characters
-//     return s
-//       .split('')
-//       // Transform each character and its index
-//       .map((char, index) => {
-//         // Convert the character to uppercase
-//         const upperChar = char.toUpperCase();
-//         // Repeat the character in lowercase 'index' times
-//         const repeatedChar = char.toLowerCase().repeat(index);
-//         // Concatenate the uppercase character with the repeated lowercase characters
-//         return upperChar + repeatedChar;
-//       })
-//       // Join the transformed characters with a hyphen
-//       .join('-');
-//   }
+function accum(s) {
+    // Split the string into an array of characters
+    return s
+      .split('')
+      // Transform each character and its index
+      .map((char, index) => {
+        // Convert the character to uppercase
+        const upperChar = char.toUpperCase();
+        // Repeat the character in lowercase 'index' times
+        const repeatedChar = char.toLowerCase().repeat(index);
+        // Concatenate the uppercase character with the repeated lowercase characters
+        return upperChar + repeatedChar;
+      })
+      // Join the transformed characters with a hyphen
+      .join('-');
+  }

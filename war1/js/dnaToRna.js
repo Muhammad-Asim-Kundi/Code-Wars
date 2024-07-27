@@ -13,5 +13,7 @@
 
 function DNAtoRNA(dna) {
     //replace all occurences of t with u
-    return dna.replace(/T/g, 'U');
+    //return dna.replace(/T/g, 'U'); //this method is ok
+    return dna.replace('T','U') // it has some mistakes
+
   }
